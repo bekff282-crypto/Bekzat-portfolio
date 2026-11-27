@@ -1,0 +1,31 @@
+/* МОИ УЧЕБНЫЕ РАБОТЫ — единый фиолетовый дизайн */
+:root{--bg:#10091f;--panel:#211632;--panel2:#2d1d43;--purple:#8052b5;--purple2:#b78be8;--text:#f6f0ff;--muted:#c9b8df;--line:#594078;--shadow:0 12px 32px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 15% 0%,#39205c 0,transparent 34%),linear-gradient(135deg,#10091f,#1b1030 55%,#2b1745);color:var(--text);font:16px/1.7 Arial,Helvetica,sans-serif}
+header{padding:68px 20px 58px;text-align:center;background:linear-gradient(135deg,rgba(55,30,85,.96),rgba(112,66,157,.88));border-bottom:1px solid #8a63b5}
+header h1{max-width:1000px;margin:0 auto 12px;font-size:clamp(30px,5vw,48px);line-height:1.2;letter-spacing:.3px;color:#fff}
+header p{margin:0;color:#e5d5f7;font-size:clamp(14px,2vw,18px)}
+nav{position:sticky;top:0;z-index:20;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:9px;padding:13px 16px;background:rgba(19,11,31,.94);border-bottom:1px solid rgba(183,139,232,.3);backdrop-filter:blur(12px)}
+nav a{display:inline-block;padding:8px 15px;border:1px solid #634583;border-radius:999px;background:#302044;color:#eadcff;text-decoration:none;font-size:14px;font-weight:600;transition:background .2s,border-color .2s,transform .2s}
+nav a:hover,nav a:focus{background:#70469b;border-color:#bd98e8;color:#fff;transform:translateY(-2px);outline:none}
+main{width:min(1120px,94%);margin:30px auto 55px;padding:0 4px}
+.box{margin:22px 0;padding:clamp(20px,3vw,32px);background:linear-gradient(145deg,rgba(39,26,57,.98),rgba(30,20,45,.98));border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);scroll-margin-top:90px}
+.box h2{margin:0 0 20px;padding:0 0 12px;border-bottom:2px solid #684b8b;color:#e1caff;font-size:clamp(23px,3vw,29px);line-height:1.3}
+h3{margin:26px 0 12px;color:#d9baff;font-size:20px;line-height:1.4}
+p{margin:10px 0 14px}strong,b{color:#fff} .muted{color:var(--muted)}
+a{color:#d5b5ff;text-underline-offset:3px}a:hover{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px;margin:16px 0}
+.card{min-width:0;padding:20px;background:linear-gradient(145deg,#38264e,#291b3b);border:1px solid #62477f;border-radius:14px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);border-color:#a77bd5;box-shadow:0 10px 24px rgba(0,0,0,.22)}
+.card h3{margin:0 0 10px;color:#e5d3ff}.card p:last-child{margin-bottom:0}
+table{width:100%;margin:16px 0;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid #60477c;border-radius:12px}
+th,td{min-width:130px;padding:12px 14px;border-right:1px solid #523b6b;border-bottom:1px solid #523b6b;text-align:left;vertical-align:top}
+th{background:#563875;color:#fff;font-weight:700}td{background:#281b39;color:#eee5f8}tr:nth-child(even) td{background:#322244}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}
+ul,ol{padding-left:26px;margin:12px 0 18px}li{margin:7px 0;padding-left:3px}li::marker{color:#c39aef}
+pre{max-width:100%;margin:16px 0;padding:18px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:#120c1d;color:#e2d1f8;border:1px solid #594078;border-radius:12px;font:14px/1.65 Consolas,Monaco,monospace}
+footer{padding:28px 16px;text-align:center;background:#130c20;border-top:1px solid #51396d;color:#c9b8df}
+section[id],div[id]{scroll-margin-top:90px}
+@media(max-width:700px){header{padding:44px 16px}nav{position:relative;padding:12px 10px;gap:7px}nav a{padding:7px 11px;font-size:13px}main{width:96%;margin:18px auto 35px}.box{margin:16px 0;padding:18px;border-radius:14px}h3{font-size:18px}table{display:block;overflow-x:auto;white-space:normal}th,td{padding:10px;min-width:145px}.card{padding:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+@media print{body{background:#fff!important;color:#111!important}header,nav,footer{background:#fff!important;color:#111!important}header h1,header p,h2,h3,p,li,td,th{color:#111!important}.box,.card{background:#fff!important;box-shadow:none!important;border:1px solid #aaa;break-inside:avoid}nav{display:none}a{color:#111}}
