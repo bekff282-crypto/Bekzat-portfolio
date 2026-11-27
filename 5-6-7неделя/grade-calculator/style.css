@@ -1,0 +1,53 @@
+/* Стиль как на твоём скриншоте: фиолетовый фон и белая карточка */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b1035, #492477);
+    color: #222;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #6427a8;
+}
+
+h2 {
+    color: #6427a8;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#result {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#result p {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 7px;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 18px 10px;
+    }
+
+    .container {
+        margin: 12px auto;
+        padding: 22px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
